@@ -1,4 +1,25 @@
-# JS Unit Testing Functions
+# JS Unit Testing Classes
+
+<p align="center">
+  
+<a href="#node-badge">
+  <img alt="code language: NodeJS" src="https://img.shields.io/badge/language%3A-NodeJS-brightgreen"></a>
+  
+<a href="#eslint-badge">
+  <img alt="code linter: eslint" src="https://img.shields.io/badge/linter%3A-ESLint-blue"></a>
+  
+<a href="#airbnb-badge">
+  <img alt="code style: Airbnb" src="https://img.shields.io/badge/style%3A-Airbnb-red"></a>
+  
+<a href="#prettier-badge">
+  <img alt="code formatter: prettier" src="https://img.shields.io/badge/formatter%3A-Prettier-pink"></a>
+  
+<a href="#jest-badge">
+  <img alt="unit test: jest" src="https://img.shields.io/badge/unit%20test%3A-Jest-brown"></a>
+ 
+ 
+
+</p>
 
 This project is written in [Node](https://nodejs.org/en/), and tested with [Jest - the delightful JavaScript Testing Framework](https://jestjs.io/).
 
@@ -22,13 +43,13 @@ Fixing the code will make the tests pass and show in green in the console.
 
 ## Run tests on a single file
 
-`npm test -- functions-01.test.js`
+`npm test -- classes-01.test.js`
 
 NOTE: The -- tells npm to pass along whatever following arguments there are to the program it is running.
 
 The above npm command is equivalent to:
 
-`npx jest --coverage --verbose functions-01.test.js `
+`npx jest --coverage --verbose classes-01.test.js `
 
 Since we have a number of files that need individual editing, we want to run individual testing sequentially on each one of them as well.
 
@@ -36,7 +57,7 @@ Since we have a number of files that need individual editing, we want to run ind
 
 By default, jest looks for files that end in .test.js and will search folders to find those files. Your JavaScript files are in a folder call tests.
 
-So the above example tests the first file `tests/functions-01.test.js` and outputs the results to the console.
+So the above example tests the first file `tests/classes-01.test.js` and outputs the results to the console.
 
 If a test fails, jest will identify it as failing and print one or more error messages, depending on the test expectations.
 
@@ -46,7 +67,7 @@ If a test fails, jest will identify it as failing and print one or more error me
 
 One-by-one, edit each JavaScript file and follow the instructions for each function listed. When one file completely passes its tests, you are ready for the next file.
 
-Start with functions-01.test.js
+Start with classes-01.test.js
 
 ---
 
@@ -101,6 +122,7 @@ In the above silly example, the code logic is wrong. There is probably no need f
 ## Commit and push after all tests pass
 
 ---
+
 
 > "Unit testing ensures that all code meets quality standards before it's deployed."
 > [The importance of unit testing](https://fortegrp.com/the-importance-of-unit-testing/)
