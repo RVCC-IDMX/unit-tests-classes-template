@@ -13,7 +13,7 @@
  * Define a Polygon class that has the following properties:
  *  1) A constructor that takes and stores an array describing
  *  the lengths of the polygon’s sides.
- *  2) the private class member called name  = 'Polygon'
+ *  2) the private class field called name  = 'Polygon'
  *    https://mzl.la/3vhtrC5
  *  3) A count() method that returns the number of sides.
  *  4) A perimeter() method that returns the polygon’s perimeter.

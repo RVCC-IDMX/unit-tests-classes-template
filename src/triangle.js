@@ -18,7 +18,7 @@ const Polygon = require('./polygon');
  *  2) A constructor that
  *     a) calls the super class constructor with the arguments provided
  *         https://mzl.la/2Z5y8my
- *     b) sets the private class member name to 'Triangle'
+ *     b) sets the private class field name to 'Triangle'
  *  3) By default, has the methods inherited from Polygon
  *    a) count()
  *    b) perimeter()

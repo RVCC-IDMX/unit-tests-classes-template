@@ -13,44 +13,46 @@
 
 /*
  * Define a Square class that has the following properties:
- *  1) Inherits (extends) from the Polygon class
+ *  1) Inherits (extends) from the Rectangle class
  *  2) A constructor that accepts the square's side length
- *     a) calls  the super class constructor with a 4-element array
- *       using the square's side length
+ *     a) calls the super class constructor with height
+ *        and width, both equal to the side of the square
  *       https://mzl.la/2Z5y8my
- *     b) sets the private property called name to 'Square'
+ *     b) sets the private class field called name to 'Square'
  *        https://mzl.la/3vhtrC5
- *  3) By default, has the methods inherited from Polygon
+ *  3) By default, has the methods inherited from rectangle
  *    a) count()
  *    b) perimeter()
  *    c) sayName()
- *  4) A method called isValid() that returns true
- *    if the length of the square's side is a number > 0
- *  5) A method called area() that returns the area of the square
+ *    d) area()
+ *    e) isValid()
+ *  5) A method called getSide() that returns the length
+ *     of the square's side
  *
- * hint: as well as passing the 4-element array to
- * the super class constructor, you can store side in this class
- * to use with its methods - isValid() and area()
+ * hint: as well as passing the height and width to the
+ * the super class constructor, you can store side
+ * as a private class field in this class
+ * to use with its new method getSide()
  */
 
 /* --------------Important Step Below ------------ */
-// import the polygon class using the CommonJS require() function
+// import the Rectangle class using the CommonJS require() function
 // See triangle.js for an example of how to import a file
 
 /**
  * Square class
- * @class Square class extends Polygon
+ * @class Square class extends rectangle
  * @constructor Square constructor function
  * @param {array} sides
  */
 
-class Square extends Polygon {
+class Square extends Rectangle {
   /**
    * @constructor
    * @param {number} side - the length of a side
    * must use super() to call the parent class constructor
    * hint: this constructor gets 1 number as an argument
-   * and calls the parent class constructor with an array of  4 numbers
+   * and calls the parent class constructor with height and width
    */
 
   /**
@@ -62,18 +64,10 @@ class Square extends Polygon {
   }
 
   /**
-   * @method isValid
-   * @returns {boolean} true if the side length is a number > 0
-   */
-  isValid() {
-    // write your code here
-  }
-
-  /**
-   * @method sideLength - return the side length
+   * @method getSide - return the side length
    * @returns {number} the side length
    */
-  sideLength() {
+  getSide() {
     // write your code here
   }
 

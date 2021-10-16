@@ -8,9 +8,10 @@
  * Path: src/classes-02.js
  *
  * Create a Thermometer class
- * Using getters and setters
+ * Using getters and setters - https://bit.ly/3DLVSuF (Javascript.info)
  * getters => access properties https://mzl.la/3p9oLwR
  * setters => change properties https://mzl.la/3vjPiZl
+ * private class field => https://mzl.la/3vhtrC5
  *
  */
 
@@ -18,17 +19,16 @@
  * @class Thermometer
  *
  * An instance of this class is a temperature that
- * is represented in Celsius (store it in a private property)
- * The other units are calculated from the stored Celsius temperature
+ * is represented in celsius units (store it in a private class field)
+ * The other unit values are calculated from the
+ * stored celsius temperature
  *
- * The celsius property is private, so its name starts with a # symbol
+ *
  */
 class Thermometer {
-  // write your code here
-
   /**
    * @constructor
-   * @param {*} celsius
+   * @param {number} celsius
    */
   constructor(celsius) {
     // write your code here
