@@ -1,23 +1,21 @@
 # JS Unit Testing Classes
 
 <p align="center">
-  
+
 <a href="#node-badge">
   <img alt="code language: NodeJS" src="https://img.shields.io/badge/language%3A-NodeJS-brightgreen"></a>
-  
+
 <a href="#eslint-badge">
   <img alt="code linter: eslint" src="https://img.shields.io/badge/linter%3A-ESLint-blue"></a>
-  
+
 <a href="#airbnb-badge">
   <img alt="code style: Airbnb" src="https://img.shields.io/badge/style%3A-Airbnb-red"></a>
-  
+
 <a href="#prettier-badge">
   <img alt="code formatter: prettier" src="https://img.shields.io/badge/formatter%3A-Prettier-pink"></a>
-  
+
 <a href="#jest-badge">
   <img alt="unit test: jest" src="https://img.shields.io/badge/unit%20test%3A-Jest-brown"></a>
- 
- 
 
 </p>
 
@@ -27,7 +25,7 @@ This project is written in [Node](https://nodejs.org/en/), and tested with [Jest
 
 ## The assignment
 
-When npm runs jest, all the tests are failing as seen at the end of its output to the console.
+When npm runs Jest, all the tests are failing as seen at the end of its output to the console.
 
 Fixing the code will make the tests pass and show in green in the console.
 
@@ -39,41 +37,48 @@ Fixing the code will make the tests pass and show in green in the console.
 
 `npm install`
 
----
-
-## Run tests on a single file
-
-`npm test -- classes-01.test.js`
-
-NOTE: The -- tells npm to pass along whatever following arguments there are to the program it is running.
-
-The above npm command is equivalent to:
-
-`npx jest --coverage --verbose classes-01.test.js `
-
-Since we have a number of files that need individual editing, we want to run individual testing sequentially on each one of them as well.
+**Eslint and Prettier need the modules installed.**
 
 ---
 
-By default, jest looks for files that end in .test.js and will search folders to find those files. Your JavaScript files are in a folder call tests.
+## Start with the Geometry classes
 
-So the above example tests the first file `tests/classes-01.test.js` and outputs the results to the console.
+### Edit files in this order
 
-If a test fails, jest will identify it as failing and print one or more error messages, depending on the test expectations.
-
----
-
-## Edit and test each file sequentially
-
-One-by-one, edit each JavaScript file and follow the instructions for each function listed. When one file completely passes its tests, you are ready for the next file.
-
-Start with classes-01.test.js
+1. polygon.js
+2. triangle.js
+3. rectangle.js
+4. square.js
 
 ---
 
-## Git is configured not to allow a commit if it sees any errors
+### Run tests
 
-Eslint needs to be properly running in this repo as it is configured to not allow you to commit with coding errors.
+`npm test -- geometry.test.js`
+
+OR
+
+`npx jest tests/geometry.test.js`
+
+---
+
+## Second do the Thermometer class
+
+### Edit the src file
+
+1. thermometer.js
+
+### Test
+
+`npm test -- thermometer.test.js`
+
+OR
+
+`npx jest tests/thermometer.test.js`
+
+---
+
+Eslint needs to be properly running in this repo.
 
 Be careful of any squigglies and get them properly fixed (do not add any eslint disable comments)
 
@@ -123,9 +128,10 @@ In the above silly example, the code logic is wrong. There is probably no need f
 
 ---
 
-
 > "Unit testing ensures that all code meets quality standards before it's deployed."
 > [The importance of unit testing](https://fortegrp.com/the-importance-of-unit-testing/)
 
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+
+[Setting up ESLint to work with new or proposed JavaScript features such as private class fields.](https://griffa.dev/posts/setting-up-eslint-to-work-with-new-or-proposed-javascript-features-such-as-private-class-fields./#configuring-eslint)

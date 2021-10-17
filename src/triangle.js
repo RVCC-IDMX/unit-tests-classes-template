@@ -10,7 +10,7 @@
  *
  */
 
-const Polygon = require('./polygon');
+const { Polygon } = require('./polygon');
 
 /*
  * Define a Triangle class that has the following properties:
@@ -18,7 +18,7 @@ const Polygon = require('./polygon');
  *  2) A constructor that
  *     a) calls the super class constructor with the arguments provided
  *         https://mzl.la/2Z5y8my
- *     b) sets the private class field name to 'Triangle'
+ *     b) sets the property name to 'Triangle'
  *  3) By default, has the methods inherited from Polygon
  *    a) count()
  *    b) perimeter()
@@ -58,7 +58,7 @@ class Triangle extends Polygon {
    * @method isValid
    * @returns {boolean}
    * @memberof Triangle
-   * @instance
+
    * @description returns true if the triangle can be formed from the
    * lengths of the sides. Otherwise, it returns false.
    * Must be true:

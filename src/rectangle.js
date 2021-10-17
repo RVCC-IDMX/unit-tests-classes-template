@@ -19,8 +19,7 @@
  *       using the parameter height and width, which represents the sides
  *       of the rectangle
  *       https://mzl.la/2Z5y8my
- *     b) sets the private property called name to 'Rectangle'
- *        https://mzl.la/3vhtrC5
+ *     b) sets the property called name to 'Rectangle'
  *  3) By default, has the methods inherited from Polygon
  *    a) count()
  *    b) perimeter()
@@ -55,28 +54,15 @@ class Rectangle extends Polygon {
    * and must call the parent class constructor with
    * an array of 4 numbers representing the 4 sides of the rectangle
    */
-
-  /**
-   * @constructor
-   * @param {number} side - the length of a side of the rectangle
-   */
-  constructor(side) {
+  constructor(height, width) {
     // write your code here
   }
 
   /**
    * @method isValid
-   * @returns {boolean} true if the side length is a number > 0
+   * @returns {boolean} true if the side lengths are both a number > 0
    */
   isValid() {
-    // write your code here
-  }
-
-  /**
-   * @method sideLength - return the side length
-   * @returns {number} the side length
-   */
-  sideLength() {
     // write your code here
   }
 

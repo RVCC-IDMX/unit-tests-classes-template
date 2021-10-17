@@ -18,8 +18,7 @@
  *     a) calls the super class constructor with height
  *        and width, both equal to the side of the square
  *       https://mzl.la/2Z5y8my
- *     b) sets the private class field called name to 'Square'
- *        https://mzl.la/3vhtrC5
+ *     b) sets the property called name to 'Square'
  *  3) By default, has the methods inherited from rectangle
  *    a) count()
  *    b) perimeter()
@@ -31,7 +30,7 @@
  *
  * hint: as well as passing the height and width to the
  * the super class constructor, you can store side
- * as a private class field in this class
+ * as a property in this class
  * to use with its new method getSide()
  */
 
