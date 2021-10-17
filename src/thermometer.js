@@ -2,10 +2,10 @@
 /* eslint-disable getter-return */
 /* eslint-disable class-methods-use-this */
 /*
- * classes-02.js
+ * thermometer.js
  * Language: javascript
- * Test: tests/classes-02.test.js
- * Path: src/classes-02.js
+ * Test: tests/thermometer.test.js
+ * Path: src/thermometer.js
  *
  * Create a Thermometer class
  * Using getters and setters - https://bit.ly/3DLVSuF (Javascript.info)

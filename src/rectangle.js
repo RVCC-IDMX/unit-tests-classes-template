@@ -4,7 +4,7 @@
 /*
  * rectangle.js
  * Language: javascript
- * Test: tests/rectangle.test.js
+ * Test: tests/geometry.test.js
  * Path: src/rectangle.js
  *
  * Create a rectangle class
@@ -42,17 +42,23 @@
  * @class rectangle class extends Polygon
  * @constructor rectangle constructor function
  * @param {array} sides
+ * @property {string} name
+ * @property {number} height
+ * @property {number} width
  */
 
 class Rectangle extends Polygon {
   /**
    * @constructor
-   * @param {number} height -
+   * @param {number} height
    * @param {number} width
    * must use super() to call the parent class constructor
+   * https://mzl.la/2Z5y8my
    * hint: this constructor gets height and width as parameters
-   * and must call the parent class constructor with
+   * and must call the parent class constructor which takes
    * an array of 4 numbers representing the 4 sides of the rectangle
+   * You'll need to use the height and width parameters to create
+   * the array of 4 numbers
    */
   constructor(height, width) {
     // write your code here
@@ -60,7 +66,7 @@ class Rectangle extends Polygon {
 
   /**
    * @method isValid
-   * @returns {boolean} true if the side lengths are both a number > 0
+   * @returns {boolean} true if the height and width are both a number > 0
    */
   isValid() {
     // write your code here
@@ -69,7 +75,7 @@ class Rectangle extends Polygon {
   /**
    * @method area - return the area of the rectangle
    * @returns {number} the area of the rectangle if
-   * the side length is a number > 0
+   * the height and width are a number > 0
    * otherwise return 0
    */
   area() {

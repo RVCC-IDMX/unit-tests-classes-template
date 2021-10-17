@@ -3,7 +3,7 @@
 /*
  * polygon.js
  * Language: javascript
- * Test: tests/polygon.test.js
+ * Test: tests/geometry.test.js
  * Path: src/polygon.js
  *
  * Create a polygon class
@@ -41,7 +41,7 @@ class Polygon {
   }
 
   /**
-   * @returns {number} - value of the perimeter
+   * @returns {number} - value of the perimeter (sum of all sides)
    */
   perimeter() {
     // write your code here

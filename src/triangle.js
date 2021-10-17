@@ -3,7 +3,7 @@
 /*
  * triangle.js
  * Language: javascript
- * Test: tests/triangle.test.js
+ * Test: tests/geometry.test.js
  * Path: src/triangle.js
  *
  * Create a Triangle class
@@ -41,6 +41,7 @@ const { Polygon } = require('./polygon');
  * @class Triangle class extends Polygon
  * @constructor Triangle constructor function
  * @param {array} sides
+ * @property {string} name
  */
 class Triangle extends Polygon {
   /**
@@ -58,7 +59,6 @@ class Triangle extends Polygon {
    * @method isValid
    * @returns {boolean}
    * @memberof Triangle
-
    * @description returns true if the triangle can be formed from the
    * lengths of the sides. Otherwise, it returns false.
    * Must be true:

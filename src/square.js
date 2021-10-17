@@ -4,7 +4,7 @@
 /*
  * square.js
  * Language: javascript
- * Test: tests/square.test.js
+ * Test: tests/geometry.test.js
  * Path: src/square.js
  *
  * Create a square class
@@ -43,6 +43,8 @@
  * @class Square class extends rectangle
  * @constructor Square constructor function
  * @param {array} sides
+ * @property {string} name
+ * @property {number} side
  */
 
 class Square extends Rectangle {

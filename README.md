@@ -37,7 +37,7 @@ Fixing the code will make the tests pass and show in green in the console.
 
 `npm install`
 
-**Eslint and Prettier need the modules installed.**
+<p style="font-size: 1.5em;">ESLint and Prettier need the modules installed before you begin editing.<p>
 
 ---
 
