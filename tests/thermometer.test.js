@@ -1,6 +1,27 @@
 /* eslint-disable no-unused-vars */
 const { Thermometer } = require('../src/thermometer');
 
+test('Thermometer celsius getter & setter', () => {
+  const t0 = new Thermometer(0);
+  expect(t0.celsius).toBe(0);
+  t0.celsius = 10;
+  expect(t0.celsius).toBe(10);
+});
+
+test('Thermometer kelvin getter & setter', () => {
+  const thermometer = new Thermometer(0);
+  thermometer.kelvin = 0;
+  expect(thermometer.kelvin).toBe(0);
+  expect(thermometer.celsius).toBeCloseTo(-273.15);
+});
+
+test('Thermometer fahrenheit getter & setter', () => {
+  const thermometer = new Thermometer(0);
+  thermometer.fahrenheit = 212;
+  expect(thermometer.fahrenheit).toBe(212);
+  expect(thermometer.celsius).toBeCloseTo(100, 2);
+});
+
 test('Thermometer constructor & getters', () => {
   const t0 = new Thermometer(0);
   expect(t0.celsius).toBe(0);
