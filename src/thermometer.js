@@ -116,8 +116,9 @@ class Thermometer {
    * @description
    * Example: Assuming an instance of this class is 0°C
    * toString('C') returns '0°C'
-   * toString('K') returns '273.15K'
+   * toString('K') returns '273.15K' - notice no ° symbol
    * toString('F') returns '32°C'
+   * Any other value for unit returns the celsius value + '°C'
    *
    */
   toString(format) {
