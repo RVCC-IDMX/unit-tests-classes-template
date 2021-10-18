@@ -30,6 +30,8 @@ test('Triangle', () => {
   //
   const t0 = new Triangle([1, 4, 5]);
   expect(t0.isValid()).toBe(false);
+  const t1 = new Triangle([-3, 4, 5]);
+  expect(t1.isValid()).toBe(false);
 });
 
 test('Rectangle', () => {
@@ -58,4 +60,13 @@ test('Square', () => {
   expect(typeof square2).toBe('object');
   expect(square2.perimeter()).toBe(0);
   expect(square2.isValid()).toBe(false);
+
+  const square3 = new Square(-1);
+  expect(typeof square3).toBe('object');
+  expect(square3.isValid()).toBe(false);
+
+  const square4 = new Square('four');
+  expect(typeof square4).toBe('object');
+  expect(square4.isValid()).toBe(false);
+  expect(square4.area()).toBe(0);
 });
