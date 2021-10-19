@@ -9,9 +9,9 @@
  *
  * Create a Thermometer class
  * Using getters and setters - https://bit.ly/3DLVSuF (Javascript.info)
- * getters => access properties https://mzl.la/3p9oLwR
- * setters => change properties https://mzl.la/3vjPiZl
- * private class field => https://mzl.la/3vhtrC5
+ * getters - access properties https://mzl.la/3p9oLwR
+ * setters - change properties https://mzl.la/3vjPiZl
+ * private class field - https://mzl.la/3vhtrC5
  *
  */
 
