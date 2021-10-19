@@ -14,7 +14,6 @@
  *  1) A constructor that takes and stores an array describing
  *  the lengths of the polygon’s sides.
  *  2) the property called name  = 'Polygon'
- *    https://mzl.la/3vhtrC5
  *  3) A count() method that returns the number of sides.
  *  4) A perimeter() method that returns the polygon’s perimeter.
  *  5) A sayName() method that returns the name of the polygon.
